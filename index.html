@@ -11,6 +11,7 @@ body {
 </style>
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="includes/ice/ice.js" type="text/javascript"></script>
 </head> 
 <body> 
 
@@ -35,27 +36,25 @@ body {
 	</div>
 </div>
 
-<div data-role="page" id="PO">
-	<div data-role="header">
+<div id="PO" data-role="page" ice:repeatinggroup="*">
+  <div data-role="header">
 	  <h1 align="center"><a href="#page" target="_blank"><img src="home-button.png" width="50" height="51"></a></h1>
-	  <h1 align="center">Plan and Organise</h1>
+    <h1 align="center">Plan and Organise</h1>
   </div>
-	<div data-role="content">
-	  <ul>
-	    <li><a href="#PO1">PO1 Define a Strategic IT Plan</a></li>
-	    <li>PO2 Define the Information Architecture</li>
-	    <li>PO3 Determine Technological Direction</li>
-      </ul>
-    </div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
+  <ul data-role="listview">
+	  <li><a href="#PO1">Page Two</a></li>
+	  <li><a href="#page3">Page Three</a></li>
+	  <li><a href="#page4">Page Four</a></li>
+  </ul>
+  <div data-role="footer">
+	<h4>Page Footer</h4>
+  </div>
 </div>
 
 <div data-role="page" id="PO1">
-	<div data-role="header">
-		<h1 align="center"><a href="#page"><img src="home-button.png" alt="" width="50" height="51"></a></h1>
-		<h1>PO1 Define a Strategic IT Plan</h1>
+  <div data-role="header">
+    <h1 align="center"><a href="#page"><img src="home-button.png" alt="" width="50" height="51"></a></h1>
+    <h1 align="center">PO1 Define a Strategic IT Plan</h1>
 	</div>
 	<div data-role="content">
 	  <p><a href="#PO1PD">PROCESS DESCRIPTION</a></p>
@@ -69,9 +68,9 @@ body {
 </div>
 
 <div data-role="page" id="PO1PD">
-	<div data-role="header">
-		<h1 align="center"><a href="#page"><img src="home-button.png" alt="" width="50" height="51"></a></h1>
-		<h1>PO1 Process Description</h1>
+  <div data-role="header">
+    <h1 align="center"><a href="#page"><img src="home-button.png" alt="" width="50" height="51"></a></h1>
+    <h1 align="center">PO1 Process Description</h1>
 	</div>
 	<div data-role="content">	
 		<p>Content </p>
